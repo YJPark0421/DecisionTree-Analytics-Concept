@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/88306533/129624193-af38987b-af16-4472-869d-828372719a4c.jpg" align="right" width="15%" height="15%">
+<img src="https://user-images.githubusercontent.com/88306533/129624193-af38987b-af16-4472-869d-828372719a4c.jpg" align="right" width="16%" height="16%">
 
 
 # 1.10. Decision Tree
@@ -42,7 +42,7 @@ Training| `Python` |`Jupyter Lab`| Understanding Supervised Learning thogh Sciki
    > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621859-df92c822-808f-4395-9c3d-6c8313cca6f2.png" width="85%" height="85%"></img></p>
    - **2.1.1 Classification** | **2.1.2 Regression** 
    > ***DecisionTreeClassifier*** is a class capable of performing multi-class classification on a dataset.<br>
-   > ***Format Example : `X = (n_samples, n_features)`, `Y = (n_samples,)`***
+   > ***Format Example : `X = (n_samples, n_features)` , `Y = (n_samples,)`***
    - **2.2 Pruning Rule**
    > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621886-9a6ed287-1618-418a-a6a2-4221eac2e30f.png" width="85%" height="85%"></img></p>
    - **2.2.1 Post Pruning**
