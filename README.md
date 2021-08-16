@@ -1,56 +1,64 @@
+<img src="https://user-images.githubusercontent.com/88306533/129624193-af38987b-af16-4472-869d-828372719a4c.jpg" align="right" width="15%" height="15%">
+
+
 # 1.10. Decision Tree
 
 ## 1️⃣ Overview
-### ◽ AAA Day(Advanced Azure Data Analytics Day)란?
-   - 게임사를 위한 Advanced Azure Data Analytics Training Day
-   - Azure 최대 레퍼런스를 보유한 Cloocus가 진행하는 Data Analytics Training Session
-   - 게임사에 Needs에 초점맞춰 개념부터 Hand-on Lab까지 Ons-Stop 진행 구성
-   - Azure Synapse Analytics로 통합된 환경에서 데이터 처리 및 분석하는 활용법 Training 
-   - (ingest, explore, prepare, manage, machine learning, BI)
+### ◽ Scikit Learn User Guide?
+   - The Scikit-learn user guide helpfully provides source code, to help you to determine which algorithm is right for your task.
+   - In this section, I'm going to create a decision trees in machine learning model will prediction. 
 ---
 
 ### ◽ Development Environment
 Page_type|Languages|Products|Description|
 :---:|:---:|:---:|:---:|
-Training|`Pyspark` `SQL` `Python` `Scala`|`Azure Synapse Analytics Service` `Azure Machine Learning Service`| Advanced Azure Data Analytics Training|
+Training| `Python` |`Jupyter Lab`| Understanding Supervised Learning thogh Scikit Learn Algorothms |
 ---
 
-### ◽ AAA Day Training Intro
-<p align="left"> <img src="https://user-images.githubusercontent.com/74857336/111577247-40460500-87f5-11eb-85eb-e6b327300981.png" width="80%" height="80%"></img></p>
+### ◽ Scikit Learn User Guide Contents
+> - [Scikit Learn > User Guide > Decision Tree](https://scikit-learn.org/stable/modules/tree.html)
 
 ---
 <br>
 
 ## 2️⃣ PreRequirement
-### ◽ Download Resource 
-- **Part0** : Overview
-> - [Overview.pdf](./(Cloocus&MS)AAA_Synapse__Gaming_vol.1_배포용.pdf)
-- **Part1** : SQL pool
-- **Part2** : Apache Spark pool
-- **Part3** : ML Modeling ( Code-Free & Apache Spark MLlib )
-> - [Hands On Labs Guide.pdf](./(Cloocus&MS)AAA_Synapse_Lab_vol.1_배포용.pdf)
+### ◽ Download Source Code
+> - [1.10. Decision Trees.ipynb](./Code/(Scikit-Learn)1.10.Decision_Trees.ipynb)
+> - [1.10. Pruning Method.ipynb](./Code/(Scikit-Learn)1.10.Pruning_Method.ipynb)
 
 --- 
 <br>
 
 ## 3️⃣ Methodology
-### ◽ Azure Synapse Analytics Architecture
-<p align="left"> <img src="https://user-images.githubusercontent.com/88306533/128795445-d7621cce-9196-4d29-bbff-bc7d44f67bfd.png" width="80%" height="80%"></img></p>
 
+### ◽ ❶ Introduction
+   - **1.1 DecisionTree Pros&Cons**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621792-326ba243-6ffc-454b-ba82-bb3a327bb1f9.png" width="80%" height="80%"></img></p>
+   - **1.2 Components of DecisionTree**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621837-a096c891-469d-4001-aa99-a769eb5244e0.png" width="80%" height="80%"></img></p>
+---
+### ◽ ❷ Methodology
+   - **2.1 Splitting Rule**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621859-df92c822-808f-4395-9c3d-6c8313cca6f2.png" width="80%" height="80%"></img></p>
+   - **2.1.1 Classification** | **2.1.2 Regression** 
+   > ***DecisionTreeClassifier*** is a class capable of performing multi-class classification on a dataset.<br>
+   > ***Format Example : `X = (n_samples, n_features)`, `Y = (n_samples,)`***
+   - **2.2 Pruning Rule**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621886-9a6ed287-1618-418a-a6a2-4221eac2e30f.png" width="80%" height="80%"></img></p>
+   - **2.2.1 Post Pruning**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621922-5da16046-6b40-4f7c-a9ec-19480b0c950f.png" width="80%" height="80%"></img></p>
+   - **2.2.2.Pre Pruning**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621949-d09ec57d-9c18-4f56-a03c-4cc9980c8cf9.png" width="80%" height="80%"></img></p>
 --- 
-### ◽ Additional Info
-#### ◽ Part0 : Overview
-#### ◽ Part1 : SQL pool 
-   > - [Part1_copy_data.sql](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part1_copy_data.sql)
-   > - [Part1_create_tables.sql](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part1_create_tables.sql)
-   > - [Part1_join_tables.sql](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part1_join_tables.sql)
-#### ◽ Part2 : Apache Spark pool
-   > - [Part2_preprocessing.py](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part2_preprocessing.py) **|** [Part2_preprocessing.ipynb](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part2_preprocessing.ipynb)
-   > - [Part2_sqlpooltospark.py](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part2_sqlpooltospark.py) **|** [Part2_sqlpooltospark.ipynb](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part2_sqlpooltospark.py) 
-#### ◽ Part3 : ML Modeling ( Code-Free & Apache Spark MLlib )
-   > - [Part3_sparkmllib_regression.py](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part3_sparkmllib_regression.py) **|** [Part3_sparkmllib_regression.ipynb](https://github.com/YJPark0421/Azure-Synapse-Analytics-HOL/blob/master/Code/Part3_sparkmllib_regression.ipynb)
+### ◽ ❸ Tree Algorithms
+   - **3.1 History of DecisionTree Algorithms**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129621983-3211d61f-73ac-4513-95f3-25ee58ec27af.png" width="80%" height="80%"></img></p>
+---
+### ◽ ❹ Appendix
+   - **4.1 Tips on Practical Use**
+   > <p align="left"> <img src="https://user-images.githubusercontent.com/88306533/129624949-9ce4fb03-5c85-4864-bfe5-4b7ceb456b97.PNG" width="80%" height="80%"></img></p>
 ---
 <br>
 
 ## 4️⃣ Reference
-> - URL [What is Azure Synapse Analytics? | Microsoft Docs](https://docs.microsoft.com/ko-kr/azure/synapse-analytics/overview-what-is)
+> - [Scikit Learn > User Guide](https://scikit-learn.org/stable/user_guide.html)
